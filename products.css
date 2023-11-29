@@ -1,0 +1,24 @@
+.oil-10ltrs,.oil,.sugar,.salt,.rice,.maize-flour,.pasta,.wheat-flour{
+    display:flex;
+    flex-direction: row;
+    flex:1;
+    justify-content:space-evenly;
+    
+}
+button{
+    background-color: black;
+    color:white;
+
+}
+html{
+    background-color: antiquewhite;
+}
+.header{
+    text-align: center;
+}
+footer{
+    background-color: navy;
+    color:white;
+    text-align: center;
+    
+}

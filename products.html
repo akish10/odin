@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products in strore</title>
+        
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="products.css">
+    </head>
+    <body>
+
+        <header>
+            <h1 class="header">MinnieMart Store</h1>
+            <p class="header">For quality products....</p>
+        </header>
+        <i class='bx bx-cart-add' id="cart-items">Cart</i>
+        <span id="cart-count">0</span> items in cart
+        <br>
+        Total Price: $<span id="total-price">0.00</span>
+        <hr>
+        <button id="checkout-button">Purchase </button>
+
+
+        <div class="oil-10ltrs">
+            <div>
+                <img src="th-1346625245.png" height="250px" width="250px">
+                <h3>Rina cooking oil 10ltrs</h3>
+                <p>$ 16.34</p>
+                <button onclick="addToCart('product1')"> ORDER</button>
+            </div>
+            <div>
+                <img src="freshfri10ltrs.png" height="250px" width="250px">
+                <h3>Fresh fri cooking oil 10ltrs</h3>
+                <p>$ 16.01</p>
+                <button onclick="addToCart('product2')">ORDER</button>
+            </div>
+            <div>
+                <img src="golden10ltrs.png" height="250px" width="250px">
+                <h3>Golden fry cooking oil 10ltrs</h3>
+                <p>$ 15.69</p>
+                <button onclick="addToCart('product3')">ORDER</button>
+            </div>
+            <div>
+                <img src="pika10ltrs.png" height="250px" width="250px">
+                <h3>Pika cooking oil 10litres</h3>
+                <p>$ 16.01</p>
+                <button onclick="addToCart('product4')">ORDER</button>
+            </div>
+        </div>
+        <div class="oil">
+            <div>
+                <img src="freshfri2ltrs.png" height="250px" width="250px">
+                <h3>fresh fri cooking oil 2ltrs</h3>
+                <p>$ 2.75</p>
+                <button onclick="addToCart('product5')">ORDER</button>
+            </div>
+            <div>
+                <img src="freshfrigarlic2ltrs.png" height="250px" width="250px">
+                <h3>fresh fri garlic cooking 2ltrs</h3>
+                <p>$ 2.75</p>
+                <button onclick="addToCart('product6')">ORDER</button>
+            </div>
+            <div>
+                <img src= "topfry2ltrs.png" height="250px" width="250px">
+                <h3>Top fry cooking oil 2ltrs</h3>
+                <p>$ 2.48</p>
+                <button onclick="addToCart('product7')">ORDER</button>
+            </div>
+            <div>
+                <img src="golde3ltrs.png" height="250px" width="250px">
+                <h3>Golden fry garlic cooking oil 3ltrs</h3>
+                <p>$ 4.64</p>
+                <button onclick="addToCart('product8')">ORDER</button>
+            </div>
+            </div>
+            <div class="sugar">
+            
+                <div>
+                    <img src="kabras.png" height="250px" width="250px">
+                    <h3>Kabras sugar 2kg</h3>
+                    <p>$ 3.398</p>
+                    <button onclick="addToCart('product9')">ORDER</button>
+                </div>
+                <div>
+                    <img src="kabras1kg.png" height="250px" width="250px">
+                    <h3>Kabras sugar 1kg</h3>
+                    <p>$ 1.69</p>
+                    <button onclick="addToCart('product10')">ORDER</button>
+                </div>
+                <div>
+                    <img src="mara.png" height="250px" width="180px">
+                    <h3>Mara sugar 2kg</h3>
+                    <p>$ 3.33</p>
+                    <button onclick="addToCart('product11')">ORDER</button>
+                </div>
+                <div>
+                    <img src="mara1kg.png" height="250px" width="250px">
+                    <h3>Mara sugar 1kg</h3>
+                    <p>$ 1.57</p>
+                    <button onclick="addToCart('product12')">ORDER</button>
+                </div>
+                <div>
+                    <img src="ndhiwa2kg.png" height="250px" width="250px">
+                    <h3>Ndhiwa sugar 2kg</h3>
+                    <p>$ 3.46</p>
+                    <button onclick="addToCart('product13')">ORDER</button>
+                </div>
+                <div>
+                    <img src="ndhiwa1kg.png" height="250px" width="250px">
+                    <h3>Ndhiwa sugar 1kg</h3>
+                    <p>$ 1.63</p>
+                    <button onclick="addToCart('product14')">ORDER</button>
+                </div>
+            </div>
+
+
+
+        <div class="salt">
+            <div>
+                <img src="kensalt500g.png" height="250px" width="250px">
+                <h3>Kensalt 500g </h3>
+                <p>$ 0.26</p>
+                <button onclick="addToCart('product15')" >ORDER</button>
+            </div>
+            <div>
+                <img src="kensalt1kg.png" height="250px" width="250px">
+                <h3>Kensalt 1kg </h3>
+                <p>$ 0.42</p>
+                <button onclick="addToCart('product16')" >ORDER</button>
+            </div>
+            <div>
+                <img src="kensalt2kg.png" height="250px" width="250px">
+                <h3>Kensalt 2kg </h3>
+                <p>$ 0.75</p>
+                <button onclick="addToCart('product17')" >ORDER</button>
+            </div>
+        </div>
+        <div class="rice">
+            <div>
+                <img src="th-677593750" height="250px" width="250px">
+                <h3>Daawat pishori  5kg original </h3>
+                <p>$ 6.21</p>
+                <button onclick="addToCart('product18')" >ORDER</button>
+            </div>
+            <div>
+                <img src="daawatlong5kg.png" height="250px" width="250px">
+                <h3>Daawat pishori long grain 5kg </h3>
+                <p>$ 6.34</p>
+                <button onclick="addToCart('product19')" >ORDER</button>
+            </div>
+            <div>
+                <img src="mweaoriginal.png" height="250px" width="250px">
+                <h3>Mwea original 2kg </h3>
+                <p>$ 3.5</p>
+                <button onclick="addToCart('product20')" >ORDER</button>
+            </div>
+            <div>
+                <img src="mweabrown.png" height="250px" width="250px">
+                <h3>Mwea brown rice 1kg </h3>
+                <p>$ 1.24</p>
+                <button onclick="addToCart('product21')" >ORDER</button>
+            </div>
+            <div>
+                <img src="local.png" height="250px" width="250px">
+                <h3>Local rice </h3>
+                <p>1kg @ $ 1.05</p>
+                <button onclick="addToCart('product22')" >ORDER</button>
+            </div>
+        </div>
+        <div class="maize-flour">
+            <div>
+                <img src="pembe5kg.png" height="250px" width="250px">
+                <h3>Pembe maize flour 5kg</h3>
+                <p>$ 3.79</p>
+                <button onclick="addToCart('product23')" >ORDER</button>
+            </div>
+            <div>
+                <img src="pembe2kg.png" height="250px" width="250px">
+                <h3>Pembe maize flour 2kg</h3>
+                <p>$ 1.24</p>
+                <button onclick="addToCart('product24')" >ORDER</button>
+            </div>
+            <div>
+                <img src="soko2kg.png" height="250px" width="250px">
+                <h3>Soko maize flour 2kg</h3>
+                <p>$ 1.31</p>
+                <button onclick="addToCart('product25')">ORDER</button>
+            </div>
+            <div>
+                <img src="ajab2kg.png" height="250px" width="250px">
+                <h3>Ajab maize flour 2kg</h3>
+                <p>$ 1.37</p>
+                <button onclick="addToCart('product26')">ORDER</button>
+            </div>
+            <div>
+                <img src="dola2kg.png" height="250px" width="250px">
+                <h3>Dola maize flour 2kg</h3>
+                <p>$ 1.27</p>
+                <button onclick="addToCart('product27')">ORDER</button>
+            </div>
+        </div>
+        <div class="pasta">
+            <div>
+                <img src="santamaria.png" height="250px" width="250px">
+                <h3>Santa maria 400g</h3>
+                <p>$ 1.14</p>
+                <button onclick="addToCart('product28')">ORDER</button>
+            </div>
+            <div>
+                <img src="santalucia.png" height="250px" width="250px">
+                <h3>Santa Lucia 400g</h3>
+                <p>$ 1.14</p>
+                <button onclick="addToCart('product29')">ORDER</button>
+            </div>
+            <div>
+                <img src="daawatspagheti.png" height="250px" width="250px">
+                <h3>Daawat spaghetti 400g</h3>
+                <p>$ 0.55</p>
+                <button onclick="addToCart('product30')">ORDER</button>
+            </div>
+            <div>
+                <img src="raneespaghetti.png" height="250px" width="250px">
+                <h3>Ranee spaghetti 400g</h3>
+                <p>$ 0.52</p>
+                <button onclick="addToCart('product31')">ORDER</button>
+            </div>
+            
+        </div>
+        <div class="wheat-flour">
+            <div>
+                <img src="ajabwheat2kg.png" height="250px" width="250px">
+                <h3>Ajab all purpose wheat flour 2kg</h3>
+                <p>$ 1.44</p>
+                <button onclick="addToCart('product32')">ORDER</button>
+            </div>
+            <div>
+                <img src="dolaflour2kg.png" height="250px" width="250px">
+                <h3>Dola wheat flour 2kg</h3>
+                <p>$ 1.31</p>
+                <button onclick="addToCart('product33')">ORDER</button>
+            </div>
+            <div>
+                <img src="exeflour2kg.jpg" height="250px" width="250px">
+                <h3>Exe all purpose wheat flour 2kg</h3>
+                <p>$ 1.41</p>
+                <button onclick="addToCart('product34')">ORDER</button>
+            </div>
+            <div>
+                <img src="pembewheat2kg.jpg" height="250px" width="250px">
+                <h3>Pembe wheat flour 2kg</h3>
+                <p>$ 1.37</p>
+                <button onclick="addToCart('product35')">ORDER</button>
+            </div>
+            <div>
+                <img src="sokowheat2kg.png" height="250px" width="250px">
+                <h3>Soko all purpose wheat flour 2kg</h3>
+                <p>$ 1.31</p>
+                <button onclick="addToCart('product36')">ORDER</button>
+            
+            </div>
+        </div>
+        <footer>
+            <address class="address">
+                Nyeri town 
+                Contact: 070158647577
+            
+            &copy; MinnieMart_store.com
+            </address>
+        </footer>
+        <script src="products.js"></script>
+    </body>
+</html>
